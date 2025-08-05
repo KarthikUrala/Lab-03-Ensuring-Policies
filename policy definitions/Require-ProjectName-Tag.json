@@ -1,0 +1,13 @@
+{
+  "mode": "All",
+  "parameters": {},
+  "policyRule": {
+    "if": {
+      "field": "[concat('tags[', 'ProjectName', ']')]",
+      "exists": "false"
+    },
+    "then": {
+      "effect": "Deny"
+    }
+  }
+}
